@@ -1920,6 +1920,27 @@ var bufferNodeIs = function( src )
 
 //
 
+/**
+ * Function argumentsIs checks incoming param whether it is Arguments. 
+ * Returns "true" if incoming param is object. Othervise "false" returned.
+ *
+ * @example 
+ * //returns true 
+ * function check( callback )
+ * {
+ *    return callback(arguments);
+ * }
+ * check(argumentsIs);
+ * @example
+ * // returns false
+ * argumentsIs('string');
+ *
+ * @param {*} src.
+ * @return {Boolean}.
+ * @method argumentsIs.
+ * @memberof wTools#.
+ */
+
 var argumentsIs = function( src )
 {
   return _ObjectToString.call( src ) === '[object Arguments]';
