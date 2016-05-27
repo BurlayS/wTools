@@ -1815,6 +1815,24 @@ var strIsNotEmpty = function( src )
 
 //
 
+/**
+ * Function symbolIs checks incoming param whether it is Symbol. 
+ * Returns "true" if incoming param is Symbol. Othervise "false" returned.
+ *
+ * @example 
+ * // returns true
+ * let sym = Symbol(); 
+ * symbolIs(sym);
+ * @example
+ * // returns false
+ * symbolIs('string');
+ *
+ * @param {*} src.
+ * @return {Boolean}.
+ * @method symbolIs.
+ * @memberof wTools#.
+ */
+
 var symbolIs = function( src )
 {
   var result = _ObjectToString.call( src ) === '[object Symbol]';
