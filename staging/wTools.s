@@ -1680,6 +1680,10 @@ var namesCoded = function( namesMap )
   return result;
 }
 
+// --
+// type test
+// --
+
 /**
  * Function objectIs checks incoming param whether it is object. 
  * Returns "true" if incoming param is object. Othervise "false" returned.
@@ -1724,6 +1728,8 @@ var mapIs = function( src )
   return _.objectIs( src ) && src.__proto__.__proto__ === null;
   /*return _.objectIs( src ) && src.__proto__ === Object.prototype;*/
 }
+
+//
 
 /**
  * Function arrayIs checks incoming param whether it is array. 
@@ -1772,6 +1778,8 @@ var hasLength = function( src )
   return false;
 }
 
+//
+
 /**
  * Function strIs checks incoming param whether it is string. 
  * Returns "true" if incoming param is string. Othervise "false" returned
@@ -1812,6 +1820,8 @@ var symbolIs = function( src )
   var result = _ObjectToString.call( src ) === '[object Symbol]';
   return result;
 }
+
+//
 
 /**
  * Function numberIs checks incoming param whether it is number. 
